@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="financ.css">
+    <script src="../js/js.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+
+    <title>inicio</title>
+</head>
+<body>
+
+  <nav>
+
+    
+      
+    <div class="login">
+        <h1 style="color: white;;">Magni Adm</h1>      
+    </div>
+  
+    </div>
+
+    <div id="navegacao">
+      <a href="perfilADM.html" id="home" >Home</a>
+      <a href="financ.html" id="financeiro">Financeiro</a>
+      <a href="GrenParc.html" id="GrenParc" >Gerenciar Parceiros</a>
+  </div>
+
+
+  </nav>  
+    <main>
+
+        <section id="um">
+
+          <h1>Nome Empresa</h1>
+          <div class="perfil">
+            <label class="label">
+              <input type="file" />
+              <figure class="figure">
+                <img src="../img/magni.png" class="fotoPerfil" alt="avatar">
+                <figcaption class="personal-figcaption">
+                  <img src="../img/camera.png">
+                </figcaption>
+              </figure>
+            </label>
+          </div>
+
+          <section id="info">
+
+            <form action="">
+
+              <label for="Nome_empresa">Nome da Empresa</label><br>
+              <input type="text" id="Nome_empresa"><br><br>
+  
+              <label for="CNPJ_empresa">CNPJ</label><br>
+              <input type="text" id="CNPJ_empresa"><br><br>
+              <script type="text/javascript">
+                $("#CNPJ_empresa").mask("00.000.000/0001-00");
+                </script>
+
+  
+              <button id="salvar">Pesquisar <i class='bx bx-search-alt-2'></i></button>
+
+            </form>
+  
+          </section>
+
+
+        </section>
+
+        <section id="dois">
+          <h1>dois</h1>
+        </section>
+
+    
+       
+        
+    
+    </section>
+
+
+    </main>
+
+   
+
+
+
+
+
+    
+    
+</body>
+</html>

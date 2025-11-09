@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+/* ===== Colors ===== */
+--body-color: #dfdee0;
+--text-color: #e9e1e1;
+--primary-color: #BE353C;
+--primary-color-light: #F6F5FF;
+--prymary-color-dark: #000;
+}
+
+.dark-mode:root {
+  --body-color: #222222;
+  --text-color: #e9e1e1;
+  --primary-color: #BE353C;
+  --primary-color-light: #F6F5FF;
+  --prymary-color-dark: #000;
+}
+
+i#aa{
+  color: var(--primary-color-dark);
+  font-size: 20pt;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+}
+
+nav{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  height: 10%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#nav-um{
+  color: var(--text-color);
+  font-size: 16pt;
+  padding: 10px;
+
+}
+section#nav-dois{
+  color: var(--text-color);
+  font-size: 16pt;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+a#aa{
+  color: var(--primary-color-light);
+  text-decoration: underline 0.10em transparent;
+  transition: text-decoration-color 300ms;
+  position: relative;
+  font-size: 16pt;
+}
+
+a#aa:hover{
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+a#as{
+  color: var(--primary-color-light);
+  text-decoration: underline 0.10em transparent;
+  transition: text-decoration-color 300ms;
+  position: relative;
+  margin-bottom: 10%;
+  font-size: 16pt;
+}
+
+a#as:hover{
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+
+/*==============*/
+
+main{
+  height: 90%;
+  width: 100%;
+}
+
+section#main-um{
+  color: var(--text-color);
+  font-size: 16pt;
+  background-color: var(--body-color);
+  height: 90%;
+  width: 100%;
+  padding: 1% 1% 5% 1%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 100ms linear;
+  transition: var() 300ms linear;
+}
+
+div#box{
+  color: var(--primary-color-light);
+  font-size: 16pt;
+  background-color: var(--primary-color);
+  height: 80%;
+  width: 60%;
+  padding-left: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 63px 5px var(--primary-color);
+  -moz-box-shadow: 0px 0px 63px 5px var(--primary-color);
+  box-shadow: 0px 0px 63px 5px var(--primary-color);
+  overflow-y: scroll;
+  position: relative;
+}
+
+table#informacoes{
+  border: 2px solid var(--primary-color-light);
+  border-radius: 10px;
+  color: var(--primary-color-light);
+  width: 80%;
+  padding: 1%;
+}
+
+.perfil input[type="file"] {
+  display: none;
+}
+
+.figure {
+  position: relative;
+}
+
+.fotoPerfil {
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  transition: all ease-in-out .3s;
+}
+
+.personal-avatar:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.personal-figcaption {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  width: inherit;
+  height: inherit;
+  border-radius: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all ease-in-out .3s;
+}
+
+.personal-figcaption:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.personal-figcaption > img {
+  margin-top: 32.5px;
+  width: 50px;
+  height: 50px;
+}
+
+input#salvar{
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--body-color);
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*=============================*/
+
+
+.switch {
+  opacity: 0;
+  position: absolute;
+}
+
+.troca {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  position: relative;
+  height: 20px;
+  width: 45px;
+  transform: scale(1.1);
+
+}
+
+
+.troca .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.switch:checked + .troca .ball {
+  transform: translateX(24px);
+}
+
+i#sol{
+  color: #f1c40f;
+}
+
+i#lua{
+  color: #f39c12;
+}
+
+/**/
+

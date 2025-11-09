@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="usuarios.css">
+    <script src="../js/js.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>   
+
+<body>
+
+    <nav>
+
+        <section id="nav-um">
+
+            <div>
+                <a href="perfil.html" id="aa">Meu Perfil</a>
+                <!--<a href="MInfo.html" id="aa"><i class='bx bx-paperclip icon'></i> Minhas Informaçôes</a><br><br>-->           
+                <a href="Usuarios.html" id="aa"><i class='bx bx-user icon'></i> Alunos</a>
+
+                <a href="SAQ.html" id="aa"><i class='bx bx-phone-incoming icon'></i> SAQ</a>
+
+
+            </div>
+
+
+        </section>
+
+           
+            
+        <section id="nav-dois">
+            
+
+            <input type="checkbox" name="switch" id="switch" class="switch">
+            
+            <label for="switch" class="troca" >
+
+                    <i class='bx bx-sun' id="sol"></i>
+                    <i class='bx bx-moon' id="lua"></i>  
+                    <div class="ball"></div>
+            </label>
+            <script src="js.js"></script>
+            <span style="padding-left: 10px;"> <a href="" id="aa"><i class='bx bx-log-out' id="aa"></i> Sair</a>
+            </span>
+        </section>
+        
+
+        
+    </nav>
+      
+    <main>
+
+        <section id="main-um">
+
+            <form action="" id="BuscarInst">
+                <input type="text" id="PesqInst" placeholder="Pesquisar Alunos"> <i class='bx bx-search-alt-2' id="lupa"></i>
+
+        
+            </form>
+
+          <form action="" id="CadInst">
+
+            <h1>Manipular dados dos Alunos</h1>
+
+            <label for="Nome_intrutor">Nome do Aluno</label>
+            <input type="text" id="Nome_intrutor"><br><br>
+
+            <label for="CPF_intrutor">CPF do Aluno</label>
+            <input type="text" id="CPF_intrutor" name="CPF_intrutor"><br><br>
+            <script type="text/javascript">
+                $("#CPF_instrutor").mask("000.000.000-00");
+                </script>
+
+            <label for="Fone_intrutor">Telefone do Aluno</label>
+            <input type="fone" id="Fone_intrutor"><br><br>
+            <script type="text/javascript">
+                $("#Fone_Instrutor").mask("(00)0-0000-0000");
+                </script>
+
+            <label for="Email_intrutor">Email do Aluno</label>
+            <input type="text" id="Email_intrutor"><br><br>
+
+            <input type="submit" name="salvar" id="SalvarInst" value="Salvar">
+            <input type="submit" name="editar" id="EditarInst" value="Editar">
+            <input type="submit" name="excluir" id="ExcluirInst" value="Excluir">
+
+          </form>
+       
+        </section>
+
+
+    </main>
+</body>
+</html>

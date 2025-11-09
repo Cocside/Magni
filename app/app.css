@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+:root{
+  /* ===== Colors ===== */
+  --body-color: #E4E9F7;
+  --text-color: black;
+  --sidebar-color: #FFF;
+  --primary-color: #BE353C;
+  --primary-color-light: #F6F5FF;
+  --toggle-color: #DDD;
+
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background-color: rgb(0,0, 0);
+    display: flex;
+    flex-direction: column;
+} 
+/*abre nav*/
+
+nav{
+  display: flex;
+  padding: 1%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--text-color);
+  font-family: 'Poppins',sans-serif;
+  height: 10%;
+  width: 100%;
+}/*confg. gerais*/
+
+/*abre botao login*/
+.btn-L {
+  background: c25538;
+  border: none;
+  margin-right: 3rem;
+}
+
+.custom-btnL {
+  font-size: 16pt;
+  width: 130px;
+  height: 40px;
+  color: white;
+  border-radius: 100px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(0, 0, 0, 0.5),/*parte de dentro*/
+                    0px 0px 25px 1px #BE353C,
+                    7px 7px 200px 0px #f1f1f1,
+                    0px 0px 5px 0px #f1f1f1;
+   /*-webkit-box-shadow: 0px 0px 26px 5px rgba(255,255,255,0.71);
+-moz-box-shadow: 0px 0px 26px 5px rgba(255,255,255,0.71);
+box-shadow: 0px 0px 26px 5px rgba(255,255,255,0.71);*/
+  outline: none;
+}
+/*fecha botão login*/
+
+h1#mag{
+  color: white;
+  font-size: 20pt;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  
+}
+a#mag{
+  color: #f1f1f1;
+  text-decoration: overline underline 2px;
+}
+
+/*fecha nav*/
+
+/*abre main*/
+main{
+  background-color: var(--text-color);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+
+}
+
+section#um{
+  background-color: var(--text-color);
+  color: var(--body-color);
+  height: 80%;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img#treino{
+  
+  transition: 300ms linear 0ms;
+}
+img#perfil{
+ 
+  transition: 300ms linear 0ms;
+}
+img#treino:hover, img#perfil:hover{
+  transform:  scale(1.1);
+}
+
+div#box{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 30px;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 50%;
+}
+
+section#local{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.texto{
+  width: 80%;
+  height: 20%;
+}
+div#box{
+  border: 2px solid black;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 35px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 35px 0px rgba(255,255,255,1);
+  box-shadow: 0px 0px 35px 0px rgba(255,255,255,1);
+  margin: 2%;
+  padding: 2%;
+}
+/*fecha main*/
+
+
+footer{
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  background-color: var(--text-color);
+  font-family: 'Poppins';
+  font-size: 7pt;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

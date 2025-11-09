@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="js/js.js"></script>
+  <title>inicio</title>
+</head>
+
+<body>
+  <div class="confiBGA">
+    <img class="confiBGA-bg" src="background.jpg" alt="BACK" id="backgroung">
+
+    <nav>
+      <div id="mySidenav" class="sidenav">
+        <div class="navegacao">
+          <a href="index.html">Inicio</a>
+          <a href="planos/planos.html">Planos</a>
+          <a href="conceito/conceito.html">Conceito</a>
+          <a href="app/app.html">App</a>
+        </div>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" on><span style="color: aliceblue;">
+        ☰</span></span>
+      </div>
+
+      <a href="login/login.html" id="login"><button class="custom-btnL btn-L">Entrar</button></a>
+
+    </nav>
+  <main>
+        <section id="um">
+          <h1 id="mag">Magni</h1>
+          <h1 id="novo">Um novo conceito, do seu jeito</h1>
+        </section>
+  </div>
+
+    <section id="dois">
+      <section id="cima">
+        <section id="cima-um" data-anime="left">
+          <h1 id="quem">O conforto e a praticidade que você queria</h1>
+        </section>
+
+        <section id="cima-dois">
+          <img src="img/treino.png" id="treino">
+        </section>
+
+      </section>
+
+      <section id="baixo">
+        <section id="baixo-um">
+          <img src="img/perfil.png" id="perfil">
+        </section>
+
+        <section id="baixo-dois" data-anime="right">
+          <h1 id="quem">Personalizado do seu jeito</h1>
+        </section>
+      </section>
+    </section>
+    <!--  <div class="fotos">
+    <img src="img/carrossel.jpg" alt="img1" id="img1">
+    <img src="img/carrossel2.jpg" alt="img2" id="img1">
+    <img src="img/carrossel3.jpg" alt="img3" id="img1">
+    <img src="img/carrossel4.jpg" alt="img4" id="img1">
+    <img src="img/carrossel5.jpg" alt="img1" id="img1">
+
+  </div> -->
+
+    <section id="tres">
+        <div class="PlanoA">
+          <h1 id="Silver">Silver</h1>
+          <p>Descrição breve do plano</p>
+          <hr>
+
+          <details id="A">
+            <summary id="A">Saiba mais</summary>
+            <p>
+              COISA BOA <br>
+              coisa melhor ainda
+            </p>
+          </details>
+
+        </div>
+
+        <section id="tres-dois" data-anime="right">
+          <h1>Planos acessíves de acordo com sua necessidade</h1>
+          <h1 id="quem" class="pulse"><a href="planos/planos.html" id="plano">Confira agora!</a> </h1>
+        </section>
+
+        <div class="PlanoC">
+          <h1 id="Diamont">Diamont</h1>
+          <p>Descrição breve do plano</p>
+          <hr>
+          <details id="A">
+            <summary id="A">Saiba mais</summary>
+            <p>
+              COISA BOA <br>
+              coisa melhor ainda
+            </p>
+          </details>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <h1>copyright©</h1>
+  </footer>
+
+  <style>
+    .PlanoA {
+      padding-left: 30px;
+      border: 0px solid black;
+      border-radius: 10%;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      -webkit-box-shadow: 0px -1px 50px 4px silver;
+      -moz-box-shadow: 0px -1px 50px 4px silver;
+      box-shadow: 0px -1px 50px 4px silver;
+    }
+
+    h1#Silver {
+      color: silver;
+    }
+
+    .PlanoC {
+      padding-left: 30px;
+      border: 0px solid black;
+      border-radius: 10%;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      -webkit-box-shadow: 0px -1px 50px 4px darkturquoise;
+      -moz-box-shadow: 0px -1px 50px 4px darkturquoise;
+      box-shadow: 0px -1px 50px 4px darkturquoise;
+    }
+
+    h1#Diamont {
+      color: darkturquoise;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      color: white;
+    }
+
+    hr {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+
+    .pulse:hover {
+      animation: pulse 0.7s infinite;
+      animation-direction: alternate;
+      -webkit-animation-name: pulse;
+      animation-name: pulse;
+    }
+
+    @-webkit-keyframes pulse {
+      0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+      }
+
+      100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(200%);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        filter: brightness(100%);
+      }
+
+      100% {
+        transform: scale(1.1);
+        filter: brightness(200%);
+      }
+    }
+  </style>
+
+  <script>
+    const debounce = function (func, wait, immediate) {
+      let timeout;
+      return function (...args) {
+        const context = this;
+        const later = function () {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+
+        };
+        const callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.aplly(context, args);
+      };
+    }
+
+    const target = document.querySelectorAll('[data-anime]');
+    const animationClass = 'animate';
+    function animeScroll() {
+      const windowTop = window.pageYOffset + (window.innerHeight * 3 / 4);
+      target.forEach(function (element) {
+        if ((windowTop) > element.offsetTop) {
+          element.classList.add(animationClass);
+        } else {
+          element.classList.remove(animationClass);
+        }
+      })
+    }
+
+    animeScroll();
+    if (target.length) {
+      window.addEventListener('scroll', debounce(function () {
+        animeScroll();
+      }));
+    }
+  </script>
+</body>
+</html>

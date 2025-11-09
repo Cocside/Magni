@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <title>LOGIN</title>
+</head>
+<body>
+
+
+    <nav>
+       <input type="button" onclick="voltar()"  value="<- Voltar" id="voltar">
+    </nav>
+    <script>
+        function voltar(){
+            window.history.back()
+        }
+    </script>
+
+
+    <div class="login-box">
+
+
+        <form method="post" action="login.php" id="login">
+
+
+            <label><strong>Email do Usuário</strong></label>
+            <input type="text" id="Email_empresa" name="Email_empresa" required>
+
+            <label><strong>Senha</strong></label> 
+            <section id="input">
+                <input type="password" id="Senha_empresa" name="Senha_empresa" required>
+                
+    
+                <img src="../img/olho.png" alt="" id="olho">
+
+            </section>   
+            <input type="submit" value="Entrar" name="entrar" id="entrar">
+            <div class="TxtCad">
+                <a href="EscSenha.php"><h1>Esqueceu senha</h1></a>
+                </div>      
+ 
+<style>
+     a{
+    color: black;
+  }
+</style>
+            <hr>
+            <div class="TxtCad">
+                <h1>Não tem conta ainda?</h1>
+                </div>
+            <a href="../cadastrar/cadastrar.php"><input type="button" name="cadastrar" value="Cadastrar" id="cadastrar"></a> 
+       
+
+       
+    
+        
+        </form>
+
+    </div>
+    
+    <script>
+        var input = document.querySelector('#input input');
+
+
+         var img = document.querySelector('#input img');
+        img.addEventListener('click', function () {
+
+
+          input.type = input.type == 'text' ? 'password' : 'text';
+        });
+
+     
+
+    </script>
+    <style>
+        img#olho {
+            height: 3rem;
+            align-items: center;
+          }
+          
+          #input img#olho {
+            cursor: pointer;
+          }
+        
+          input#Senha_empresa{
+            width: 85%;
+            height: 40px;
+            padding: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12pt;
+          }
+    </style>
+
+</body>
+</html>
+

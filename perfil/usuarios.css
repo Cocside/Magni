@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+/* ===== Colors ===== */
+--body-color: #E4E9F7;
+--text-color: #000000;
+--sidebar-color: #FFF;
+--primary-color: #BE353C;
+--primary-color-light: #F6F5FF;
+--prymary-color-dark: #000;
+--toggle-color: #DDD;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+}
+
+nav{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  height: 10%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#nav-um{
+  color: var(--text-color);
+  font-size: 16pt;
+  padding: 10px;
+
+}
+section#nav-dois{
+  color: var(--text-color);
+  font-size: 16pt;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+main{
+  height: 90%;
+  width: 100%;
+}
+
+section#main-um{
+  color: var(--prymary-color-dark);
+  font-size: 16pt;
+  background-color: var(--primary-color-light);
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+table#informacoes{
+  border: 2px solid var(--prymary-color-dark);
+  border-radius: 10px;
+  color: var(--prymary-color-dark);
+  width: 50%;
+  padding: 1%;
+}
+
+a#aa{
+  color: var(--body-color);
+  text-decoration: underline 0.10em transparent;
+  transition: text-decoration-color 300ms;
+  position: relative;
+  font-size: 16pt;
+}
+
+a#aa:hover{
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+a#as{
+  color: var(--body-color);
+  text-decoration: underline 0.10em transparent;
+  transition: text-decoration-color 300ms;
+  position: relative;
+  margin-bottom: 10%;
+  font-size: 20pt;
+}
+
+a#as:hover{
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+h1#instrutor{
+  color: var(--body-color);
+  text-decoration: underline 0.10em transparent;
+  transition: text-decoration-color 300ms;
+}
+h1#instrutor:hover{
+  text-decoration-color: rgba(255, 255, 255, 1);
+
+}
+
+.perfil input[type="file"] {
+  display: none;
+}
+
+.figure {
+  position: relative;
+}
+
+.fotoPerfil {
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  transition: all ease-in-out .3s;
+}
+
+.personal-avatar:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.personal-figcaption {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  width: inherit;
+  height: inherit;
+  border-radius: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all ease-in-out .3s;
+}
+
+.personal-figcaption:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.personal-figcaption > img {
+  margin-top: 32.5px;
+  width: 50px;
+  height: 50px;
+}
+
+input#SalvarInst, #EditarInst, #ExcluirInst{
+  width: 30%;
+  background-color: var(--primary-color);
+  color: var(--body-color);
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input#PesqInst{
+  width: 90%;
+  font-size: 20pt;
+  color: var(--prymary-color-dark);
+  border-radius: 20px;
+  padding: 1%;
+}
+
+form#CadInst{
+  width: 70%;
+}
+
+form#BuscarInst{
+  width: 50%;
+}
+
+
+i#lupa{
+  cursor: pointer;
+  size: 2rem;
+}
+
+
+.switch {
+  opacity: 0;
+  position: absolute;
+}
+
+.troca {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  position: relative;
+  height: 20px;
+  width: 45px;
+  transform: scale(1.1);
+
+}
+
+
+.troca .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.switch:checked + .troca .ball {
+  transform: translateX(24px);
+}
+
+i#sol{
+  color: #f1c40f;
+}
+
+i#lua{
+  color: #f39c12;
+}
+
+/**/

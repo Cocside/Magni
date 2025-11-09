@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="../js/js.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+      <div id="mySidenav" class="sidenav">
+        <div class="navegacao">
+          <a href="/index.html">Inicio</a>
+          <a href="/planos/planos.html">Planos</a>
+          <a href="conceito.html">Conceito</a>
+          <a href="/app/app.html">App</a>
+        </div>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" on><span style="color: aliceblue;">
+        ☰</span></span>
+      </div>
+
+      <a href="login/login.html" id="login"><button class="custom-btnL btn-L">Entrar</button></a>
+
+    </nav> 
+
+    <main>
+
+      <section id="um">
+    
+
+        <span style="font-size: 20pt; color: aliceblue;"><h1>PERGUNTAS FREQUENTES</h1></span> 
+        <details id="FAQ">
+          <summary id="FAQ">O que é a Magni</summary>
+          <p>Lorem ipsum</p>
+        </details><hr>
+
+        <details id="FAQ">
+          <summary id="FAQ">Onde posso usar?</summary>
+          <p>Lorem ipsum</p>
+        </details><hr>
+
+        <details id="FAQ">
+          <summary id="FAQ" >Como contratar</summary>
+          <p>Lorem ipsum</p>
+        </details><hr>
+          
+        <details id="FAQ">
+          <summary id="FAQ">Quais as vantagens de uso?</summary>
+          <p>Lorem ipsum</p>
+        </details><hr>
+
+        <details id="FAQ">
+          <summary id="FAQ">Onde Baixar nosso app?</summary>
+          <p>Lorem ipsum</p>
+        </details>
+        <script>
+          const detailsElements = document.querySelectorAll('details');
+      
+          // Adiciona um event listener para cada detalhe (details)
+          detailsElements.forEach((details) => {
+            details.addEventListener('click', () => {
+              // Fecha os detalhes (details) abertos
+              detailsElements.forEach((otherDetails) => {
+                if (otherDetails !== details) {
+                  otherDetails.removeAttribute('open');
+                }
+              });
+            });
+          });
+        </script>
+        
+
+      </section>
+
+     
+
+    </main>
+
+    <footer>
+
+      <h1>copyright©</h1>
+            
+    </footer>
+    
+   
+
+
+</body>
+</html>
